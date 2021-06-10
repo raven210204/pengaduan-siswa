@@ -107,7 +107,7 @@ app.post("/update", (req,res) => {
 // DELETE: /pengaduan/:id_pengaduan --> end point untuk hapus data pengaduan
 app.delete("/:id_pengaduan", (req,res) => {
     let data = {
-        id_jurusan : req.params.id_jurusan
+        id_pengaduan : req.params.id_pengaduan
     }
     let message = ""
     let sql = "delete from pengaduan where ?"
